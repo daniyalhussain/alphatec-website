@@ -1,0 +1,125 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-size: 100%;
+	line-height: 1.5;
+	color: #000;
+	background-color: #fff;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+.logo {
+	width:60px;
+	margin-right: 15px;
+}
+.navbar-brand{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+.navbar-nav {
+	li {
+		ul{
+			margin-right: 20px;
+		}
+		a {
+			color:#000;
+			font-size: 17px;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+
+}
+
+.container-fluid{
+	padding: 0;
+}
+.jumbotron {
+	border-radius: 0px;
+}
+.image-header {
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	height: 600px;
+	color: #fff;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+	h1 {
+		transition:opacity 1.5s linear;
+	}
+	img {
+		width: 120px;
+	}
+}
+
+
+.services{
+	text-align: center;
+	h1 {
+		margin-bottom: 50px;
+	}
+	.services-col{
+
+		img {
+			width: 130px;
+			margin-bottom: 40px;
+
+		}
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	clear: both;
+	background-color: #001;
+	color: #fff;
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}
