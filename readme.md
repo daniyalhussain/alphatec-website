@@ -1,4 +1,4 @@
-# Bones
+# Alpha tec website
 A Lightweight Wordpress Development Theme
 
 Bones is designed to make the life of developers easier. It's built
@@ -26,12 +26,9 @@ https://github.com/eddiemachado/bones/issues
 To view Release & Update Notes, read the CHANGELOG.md file in the main folder.
 
 For more news and to see why my parents constantly ask me what I'm
-doing with my life, follow me on twitter: @eddiemachado
+doing with my life
 
 ## Helpful Tools & Links
 
 Yeoman generator to quickly install Bones Wordpress starter theme into your Wordpress theme folder
 by 0dp
-https://github.com/0dp/generator-wp-bones
-
-
