@@ -35,7 +35,7 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-/* line 18, ../scss/breakpoints/_base.scss */
+/* line 16, ../scss/breakpoints/_base.scss */
 body {
   font-size: 100%;
   line-height: 1.5;
@@ -48,57 +48,57 @@ body {
 /*********************
 HEADER STYLES
 *********************/
-/* line 32, ../scss/breakpoints/_base.scss */
+/* line 27, ../scss/breakpoints/_base.scss */
 .logo {
   width: 60px;
   margin-right: 15px;
 }
 
-/* line 36, ../scss/breakpoints/_base.scss */
+/* line 32, ../scss/breakpoints/_base.scss */
 .navbar-brand {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
 }
 
-/* line 43, ../scss/breakpoints/_base.scss */
+/* line 39, ../scss/breakpoints/_base.scss */
 .navbar-nav li ul {
   margin-right: 20px;
 }
-/* line 46, ../scss/breakpoints/_base.scss */
+/* line 43, ../scss/breakpoints/_base.scss */
 .navbar-nav li a {
   color: #000;
   font-size: 17px;
 }
-/* line 50, ../scss/breakpoints/_base.scss */
+/* line 48, ../scss/breakpoints/_base.scss */
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
 
-/* line 57, ../scss/breakpoints/_base.scss */
+/* line 54, ../scss/breakpoints/_base.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 60, ../scss/breakpoints/_base.scss */
+/* line 58, ../scss/breakpoints/_base.scss */
 .jumbotron {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
-/* line 63, ../scss/breakpoints/_base.scss */
+/* line 62, ../scss/breakpoints/_base.scss */
 .image-header {
   background-image: url("../images/banner.jpg");
   background-size: cover;
-  height: 600px;
+  height: 350px;
   color: #fff;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 /* line 71, ../scss/breakpoints/_base.scss */
 .image-header h1 {
   transition: opacity 1.5s linear;
 }
-/* line 74, ../scss/breakpoints/_base.scss */
+/* line 75, ../scss/breakpoints/_base.scss */
 .image-header img {
   width: 120px;
 }
@@ -106,37 +106,115 @@ HEADER STYLES
 /* line 80, ../scss/breakpoints/_base.scss */
 .services {
   text-align: center;
+  padding: 75px 0;
 }
-/* line 82, ../scss/breakpoints/_base.scss */
+/* line 84, ../scss/breakpoints/_base.scss */
 .services h1 {
   margin-bottom: 50px;
 }
-/* line 87, ../scss/breakpoints/_base.scss */
+/* line 89, ../scss/breakpoints/_base.scss */
 .services .services-col img {
   width: 130px;
   margin-bottom: 40px;
 }
 
+/* line 96, ../scss/breakpoints/_base.scss */
+.about-us {
+  padding: 75px 0;
+  background-color: #eaeaea;
+  text-align: center;
+}
+/* line 101, ../scss/breakpoints/_base.scss */
+.about-us h1 {
+  margin-bottom: 40px;
+}
+/* line 105, ../scss/breakpoints/_base.scss */
+.about-us p {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* line 111, ../scss/breakpoints/_base.scss */
+.contact {
+  padding: 75px;
+  text-align: center;
+}
+/* line 115, ../scss/breakpoints/_base.scss */
+.contact .content {
+  margin-top: 30px;
+}
+/* line 118, ../scss/breakpoints/_base.scss */
+.contact .content .map {
+  margin-top: 100px;
+}
+/* line 122, ../scss/breakpoints/_base.scss */
+.contact .content .form {
+  text-align: left;
+}
+/* line 125, ../scss/breakpoints/_base.scss */
+.contact .content .form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+/* line 136, ../scss/breakpoints/_base.scss */
+.contact .content .form input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+/* line 147, ../scss/breakpoints/_base.scss */
+.contact .content .form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+/* line 158, ../scss/breakpoints/_base.scss */
+.contact .content .form input[type=text]:focus {
+  border: 3px solid #555;
+}
+/* line 162, ../scss/breakpoints/_base.scss */
+.contact .content .form input[type=email]:focus {
+  border: 3px solid #555;
+}
+/* line 166, ../scss/breakpoints/_base.scss */
+.contact .content .form textarea:focus {
+  border: 3px solid #555;
+}
+
+/* line 173, ../scss/breakpoints/_base.scss */
+.page404 {
+  text-align: center;
+  padding: 100px 0px;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
-/* line 99, ../scss/breakpoints/_base.scss */
+/* line 180, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #001;
   color: #fff;
+  height: 40px;
+  padding-top: 20px 0;
 }
 
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -187,6 +265,10 @@ you can add resource intensive styles.
   come into play. Have fun!
   
   ******************************************************************/
+  /* line 14, ../scss/breakpoints/_768up.scss */
+  .image-header {
+    height: 700px;
+  }
 }
 /*********************
 DESKTOP

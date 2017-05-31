@@ -10,116 +10,177 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
 ******************************************************************/
-
 /*********************
 GENERAL STYLES
 *********************/
-
 body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #000;
 	background-color: #fff;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
-
 /*********************
 HEADER STYLES
 *********************/
-
 .logo {
-	width:60px;
+	width: 60px;
 	margin-right: 15px;
 }
-.navbar-brand{
+
+.navbar-brand {
 	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
 }
 
 .navbar-nav {
 	li {
-		ul{
+		ul {
 			margin-right: 20px;
 		}
+
 		a {
-			color:#000;
+			color: #000;
 			font-size: 17px;
 		}
-		a:hover{
+
+		a:hover {
 			text-decoration: underline;
 		}
 	}
-
 }
 
-.container-fluid{
+.container-fluid {
 	padding: 0;
 }
+
 .jumbotron {
-	border-radius: 0px;
+	border-radius: 0;
 }
+
 .image-header {
 	background-image: url("../images/banner.jpg");
 	background-size: cover;
-	height: 600px;
+	height: 350px;
 	color: #fff;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 0;
+	padding-right: 0;
 	text-align: center;
+
 	h1 {
-		transition:opacity 1.5s linear;
+		transition: opacity 1.5s linear;
 	}
+
 	img {
 		width: 120px;
 	}
 }
 
-
-.services{
+.services {
 	text-align: center;
+	padding: 75px 0;
+
 	h1 {
 		margin-bottom: 50px;
 	}
-	.services-col{
 
+	.services-col {
 		img {
 			width: 130px;
 			margin-bottom: 40px;
-
 		}
 	}
 }
 
+.about-us {
+	padding: 75px 0;
+	background-color: #eaeaea;
+	text-align: center;
+
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	p {
+		width: 40%;
+		margin: 0 auto;
+	}
+}
+
+.contact {
+	padding: 75px;
+	text-align: center;
+
+	.content {
+		margin-top: 30px;
+
+		.map {
+			margin-top: 100px;
+		}
+
+		.form {
+			text-align: left;
+
+			input[type=text] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border: 3px solid #ccc;
+				-webkit-transition: 0.5s;
+				transition: 0.5s;
+				outline: none;
+			}
+
+			input[type=email] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border: 3px solid #ccc;
+				-webkit-transition: 0.5s;
+				transition: 0.5s;
+				outline: none;
+			}
+
+			textarea {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border: 3px solid #ccc;
+				-webkit-transition: 0.5s;
+				transition: 0.5s;
+				outline: none;
+			}
+
+			input[type=text]:focus {
+				border: 3px solid #555;
+			}
+
+			input[type=email]:focus {
+				border: 3px solid #555;
+			}
+
+			textarea:focus {
+				border: 3px solid #555;
+			}
+		}
+	}
+}
+
+.page404 {
+	text-align: center;
+	padding: 100px 0px;
+}
 /*********************
 FOOTER STYLES
 *********************/
-
 .footer {
 	clear: both;
 	background-color: #001;
 	color: #fff;
+	height: 40px;
+	padding-top: 20px 0;
 }
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}

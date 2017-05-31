@@ -52,6 +52,11 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+/* line 14, ../scss/breakpoints/_768up.scss */
+.image-header {
+  height: 700px;
+}
+
 /******************************************************************
 Site Name:
 Author:
